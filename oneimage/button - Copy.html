@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .middle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .btn{
+            background: none;
+            border: 2px solid #000;
+           text-transform: uppercase;
+           padding: 12px 20px;
+           min-width: 200px;
+           margin: 10px;
+           cursor: pointer;
+           transition: color 0.4s linear;
+           position: relative;
+        }
+        .btn :hover{
+            color: white;
+        }
+        .btn::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #a496a1;
+            z-index: -1;
+            transition: transform 0.5s;
+            transform-origin: 0 0;
+            transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+        }
+        .btn::before{
+            transform: scaleX(0);
+
+        }
+        .btn:hover::before{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="middle">
+        <a href="https://youtu.be/uT-cp7CJIW0?si=ddjKejUYK6XBDy37" style="text-decoration: none; color: #b9b2b2;">
+        <button
+        class="btn">Hover me</button>
+    </a>
+    </div>
+</body>
+</html>

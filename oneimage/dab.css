@@ -1,0 +1,189 @@
+
+ 
+*{
+    margin: 0px;
+}
+
+header{
+    height: 50px;
+    width:100%;
+    background-color:  #020202;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: op;
+    position: fixed;
+    
+    
+}
+header h1{
+
+font-size: 35px;
+padding-top: 5px;
+text-align: left;
+padding-right:800px;
+color: white;
+}
+#logoimg{
+    max-height: 50px;
+    width: 55px;
+    padding-left:10px
+   
+}
+ #logoimg:hover{
+   
+     transform: scale(1.04);
+     filter:drop-shadow(0 0 15px black); 
+ }
+ nav ul li{
+    list-style: none;
+    position:relative;
+    display:inline-block;
+    margin-right: 40px;
+    font-size: 20px;
+    column-gap: 1px;
+    color: white;
+   
+}  
+.insert{
+    
+   
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    
+
+    
+    
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top :150px;
+}
+
+.main .text h1{
+    color: #f01d0a;
+    font-size: 85px;
+    position: relative;
+    left:5%;
+    top: -80px;
+    font-family: 'polo';
+    
+}
+.main .text h2 {
+    color:  #021f9f;
+    position: relative;
+    left: 5%;
+    top:-50px;
+    font-size: 50px;
+}
+
+ .text li{
+   
+    color: #000;
+    width: 650px;
+    position: relative;
+    top: -40px;
+    left: 5%;
+    line-height: 23px;
+    text-align: justify;
+    font-size: 23px;
+    
+}
+
+
+.picture1
+{
+    right:200px;
+    margin:auto;
+    width:550px;
+    height: 500px;
+    top:-2px;
+    position: relative;
+    animation: animate 5s linear infinite ;
+    right: -20px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    top: 20px;
+}
+
+@keyframes animate {
+    0%{
+      transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+      }
+    100%{
+        transform: scale(1.1);
+      }
+}
+
+ .Recipewrap{
+   display: grid;
+   grid-template-columns: (1fr);
+   margin-left: 2%;
+   top:20000px
+} 
+.Recipewrap h1{
+    color:  #021f9f;
+   
+    left: 5%;
+    margin-top: 150px;
+    font-size: 50px;
+    text-align: justify;
+
+}
+
+.Recipewrap h2{
+      
+    color:  #010205;
+    left: -100%;
+    top: -20px;
+    font-size: 30px;
+     text-align: justify;
+}
+
+.Recipewrap p{
+    color:  #010205;
+    left: 5%;
+    top: -10px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 23px;
+    right: 9%;
+
+}
+.middle{
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.btn{
+    background: none;
+    border: 2px solid #000;
+   text-transform: uppercase;
+   padding: 12px 20px;
+   min-width: 150px;
+   margin: 10px;
+   cursor: pointer;
+   transition: color 0.4s linear;
+   position: relative;
+   
+}
+.btn:hover::before{
+    transform: scaleX(1);
+}
+@font-face {
+    font-family: 'polo';
+    src: url(Polo-SemiBold.ttf);
+}
